@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "isoget"
+version = "0.1.0"
+description = "Universal ISO installer for Linux"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Denis Kuizinas" }
+]
+dependencies = [
+  "requests",
+  "tqdm"
+]
+
+[project.scripts]
+isoget = "isoget.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
