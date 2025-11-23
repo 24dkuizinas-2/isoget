@@ -48,7 +48,8 @@ sudo isoget -i /path/to/example.iso -d /dev/sdX
 ```bash List available devices
 isoget -l
 Verify ISO checksum
-isoget -i /path/to/example.iso --verify sha256sum.txt ```
+isoget -i /path/to/example.iso --verify sha256sum.txt
+```
 ## ⚠️ Safety Notes
 ### Always double‑check the target device (/dev/sdX) before writing.
 
