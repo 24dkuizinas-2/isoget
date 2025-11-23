@@ -1,3 +1,4 @@
+import os
 import hashlib
 
 def verify_checksum(file_path, checksum_file):
@@ -19,3 +20,7 @@ def verify_checksum(file_path, checksum_file):
     else:
         print(f"Checksum mismatch!\nExpected: {expected}\nGot: {calculated}")
         return False
+
+def get_file_size(file_path):
+    """Return file size in bytes."""
+    return os.path.getsize(file_path)
