@@ -7,7 +7,7 @@ It provides a simple, safe, and consistent interface for writing `.iso` files to
 
 ## ✨ Features
 - Universal ISO support: Works with any `.iso` file, not tied to a specific distribution.
-- Cross‑distro packaging: Available for Debian/Ubuntu/Mint (`apt`), Fedora (`dnf`), Alpine (`apk`), and Arch (`pacman`).
+- Cross‑distro packaging: Available for Debian/Ubuntu/Mint (`apt`) atm, will support more systems later on.
 - Device detection: Lists available block devices so you can safely choose your USB stick.
 - Checksum verification: Optional SHA256 integrity checks before writing.
 - Minimal dependencies: Built in Python for portability, with no heavy runtime overhead.
@@ -18,24 +18,10 @@ It provides a simple, safe, and consistent interface for writing `.iso` files to
 
 ### Debian / Ubuntu / Mint
 ```bash
-sudo apt install isoget
+sudo apt install isoget.deb
 sudo isoget -i /root/etc/isofiles/pylynx.iso
 ```
-### Fedora
-```bash
-sudo dnf install isoget-fedora
-sudo isoget -i /root/etc/isofiles/pylynx.iso
-```
-### Alpine
-```bash
-sudo apk add isoget-alpine
-sudo isoget -i /root/etc/isofiles/pylynx.iso
-```
-### Arch Linux
-```bash
-sudo pacman -S isoget-arlin
-sudo isoget -i /root/etc/isofiles/pylynx.iso
-```
+
 ## 🚀 Usage
 ## Install an ISO to a USB device
 ```bash
